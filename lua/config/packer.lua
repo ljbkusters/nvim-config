@@ -16,13 +16,16 @@ return require('packer').startup(function(use)
 	use {
 		'rose-pine/neovim',
 		as = 'rose-pine',
-		vim.cmd('colorscheme rose-pine')
 	}
 	-- NVIM Live Update Syntax Tree
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		{run = ":TSUpdate"},
 	}
+  use {
+		'ThePrimeagen/harpoon',
+		requires = {{'nvim-lua/plenary.nvim'}}
+  }
   -- use('nvim-treesitter/playground') -- view tree
   -- LSP Zero (LSP support)
   use {
