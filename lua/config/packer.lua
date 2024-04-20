@@ -14,8 +14,8 @@ return require('packer').startup(function(use)
 	}
 	-- Color scheme
 	use {
-		'rose-pine/neovim',
-		as = 'rose-pine',
+		'maxmx03/solarized.nvim',
+		as = 'solarized'
 	}
 	-- NVIM Live Update Syntax Tree
 	use {
